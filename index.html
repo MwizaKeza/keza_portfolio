@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khe_Keh - Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Dark Side with Navigation and Profile -->
+            <div class="hero-left">
+                <!-- Navigation -->
+                <nav class="navbar">
+                    <div class="nav-links">
+                        <a href="#about">About me</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact" class="contact-btn">CONTACT ME</a>
+                    </div>
+                </nav>
+                
+
+            </div>
+            
+            <!-- Light Side with Name and Tech Stack -->
+            <div class="hero-right">
+                <div class="greeting">Hi, I am</div>
+                <h1 class="name">
+                    <span id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h1>
+                <p class="title">Software Engineer / Designer</p>
+                <div class="tech-stack">
+                    <div class="tech-card" data-tech="figma">
+                        <div class="cube">
+                            <div class="face front">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <div class="face back">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="face right">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="face left">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="face top">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="face bottom">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-card" data-tech="mysql">
+                        <div class="cube">
+                            <div class="face front">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="face back">
+                                <i class="fab fa-postgresql"></i>
+                            </div>
+                            <div class="face right">
+                                <i class="fab fa-mongodb"></i>
+                            </div>
+                            <div class="face left">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="face top">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <div class="face bottom">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-card" data-tech="git">
+                        <div class="cube">
+                            <div class="face front">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="face back">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="face right">
+                                <i class="fab fa-gitlab"></i>
+                            </div>
+                            <div class="face left">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="face top">
+                                <i class="fab fa-bitbucket"></i>
+                            </div>
+                            <div class="face bottom">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h1 class="call-me">Call me Keza . . .</h1>
+                <p class="description">
+                    I am <strong>Uwimbabazi Keza</strong>. In 3 words, I would describe myself as <strong>Creative</strong>, a <strong>Problem Solver</strong> and <strong>Compassionate</strong>. I have a passion for Data, Machine Learning and creative problem-solving. I've worked with Python, ML tools, app development tools, and UI/UX design. Blending logic with a love for design. Driven by <strong>Purpose</strong>, I am passionate about creating solutions that uplift and empower my community.
+                </p>
+                <div class="social-links">
+                    <a href="mailto:kezauk7@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/MwizaKeza" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="projects-hero">
+            <div class="projects-content">
+                <h2>Projects</h2>
+            </div>
+        </div>
+        
+        <div class="projects-container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="coded">CODED</button>
+                <button class="filter-btn" data-filter="designed">DESIGNED</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card coded" data-category="coded">
+                    <div class="project-image">
+                        <img src="assets/project-4.png" alt="Portfolio Website" class="project-img">
+                        <div class="project-overlay web-design">
+                            <span>An AI-powered chatbot offering information for breast cancer awareness. Built with natural language processing to answer questions, share resources, and promote early detection.</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Breast Cancer Awareness</h3>
+                        <p>Chatbot</p>
+                    </div>
+                </div>
+                
+                <div class="project-card coded" data-category="coded">
+                    <div class="project-image">
+                        <img src="assets/project-10.png" alt="Portfolio Website" class="project-img">
+                        <div class="project-overlay web-design">
+                            <span>A real-time Rwandan Sign Language translator to aid communication for the Rwandan Deaf community. Combines computer vision and machine learning to recognize RSL gestures and translate them into text or speech.</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>RSL Translator</h3>
+                        <p>ML-based Flask app</p>
+                    </div>
+                </div>
+                
+                <div class="project-card designed" data-category="coded">
+                    <div class="project-image">
+                        <img src="assets/project-2.png" alt="Portfolio Website" class="project-img">
+                        <div class="project-overlay web-design">
+                            <span>A mobile app designed to guide users through essential first aid steps. Built with React Native.</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Aidkit</h3>
+                        <p>React Native Application</p>
+                    </div>
+                </div>
+                
+                <div class="project-card designed" data-category="coded" >
+                    <div class="project-image">
+                        <img src="assets/project-11.png" alt="Portfolio Website" class="project-img">
+                        <div class="project-overlay web-design">
+                            <span>A minimal, expressive digital journal designed in Figma and built with Flutter. Blends clean UI with artistic freedom, letting users display and share art</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Ouevre Journal</h3>
+                        <p>Flutter Application</p>
+                    </div>
+                </div>
+                
+                <div class="project-card coded" data-category="designed">
+                    <div class="project-image">
+                        <img src="assets/UI-1.png" alt="Portfolio Website" class="project-img">
+                        <div class="project-overlay web-design">
+                            <span>UI templates for a food delivery application aimed at automating food delivery processes in a campus cafeteria.</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Food Delivery App</h3>
+                        <p>Mobile App UI</p>
+                    </div>
+                </div>
+                
+                <div class="project-card designed" data-category="designed">
+                    <div class="project-image">
+                      <img src="assets/UI-2 1.png" alt="Portfolio Website" class="project-img">
+                        <div class="project-overlay web-design">
+                            <span>Email Newsletter Designs for a Jewelry Company.</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Jewelry Company</h3>
+                        <p>Brand Identity Design</p>
+                    </div>
+                </div>
+                <div class="project-card designed" data-category="designed">
+                    <div class="project-image">
+                      <img src="assets/UI-3.png" alt="Portfolio Website" class="project-img">
+                        <div class="project-overlay web-design">
+                            <span>Designed a landing page for a blogging site using AdobeXD and Figma</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Blog Site</h3>
+                        <p>Landing Page Design</p>
+                    </div>
+                </div>
+
+                <div class="project-card designed" data-category="coded">
+                    <div class="project-image">
+                      <img src="assets/project-12.PNG" alt="Portfolio Website" class="project-img">
+                        <div class="project-overlay web-design">
+                            <span>Visualized patient risk groups using clustering (K-Means, DBSCAN, Hierarchical) on clinical data</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Heart Disease Analysis</h3>
+                        <p>Clustering Techniques</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2>CONTACT</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="ENTER YOUR NAME" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="ENTER YOUR EMAIL" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="PHONE NUMBER" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="YOUR MESSAGE" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">SUBMIT</button>
+            </form>
+        </div>
+        <footer>
+            <p>BACK TO TOP</p>
+            <p>@Uwimbabazi All Rights Reserved</p>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
